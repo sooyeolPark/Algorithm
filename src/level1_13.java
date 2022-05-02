@@ -25,17 +25,19 @@ public class level1_13 {
 
 }
 
-//Arrays.sort(ch, Collections.reverseOrder());를 쓸려고했는데 컴파일 에러가 난다.
-//그냥 어차피 FOR문 돌릴거 역순으로 돌리는 방법을 택함
-//컴파일 에러의 이유는 sort에 Comparator에 T에는 기본 자료형이 들어가지 못 해서이다.
-// Integer type이나 String type 등으로 배열을 선언하셔서 사용하시면 된다! 그래서 toCharArray는 안되고 .split()은 되는 이유
-//이렇게 하면 된다.
-//public long solution(long n) {
-//    String[] list = String.valueOf(n).split("");
-//    Arrays.sort(list, Collections.reverseOrder());
-//    String answer = "";
-//    for(String s : list) {
-//        answer += s;
+//굳이 array로 만들지 않고 다음과 같이 1의 자리부터 잘라서 담는것도 괜찮아 보인다.
+//class Solution {
+//    public int[] solution(long n) {
+//        String a = "" + n;
+//        int[] answer = new int[a.length()];
+//        int cnt=0;
+//
+//        while(n>0) {
+//            answer[cnt]=(int)(n%10);
+//            n/=10;
+//            System.out.println(n);
+//            cnt++;
+//        }
+//        return answer;
 //    }
-//    return Long.parseLong(answer);
 //}
