@@ -32,8 +32,8 @@ public class level1_25 {
         Scanner sc = new Scanner(System.in);
         String[] x = {};
         int n = 2;
-        boolean result = solution(x, n);
-        System.out.println(result);
+        String[] result = solution(x, n);
+        System.out.println(result.toString());
     }
 }
 
