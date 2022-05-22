@@ -52,7 +52,7 @@ public class level1_41 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [] l = {4,4,4,4,4};
-        int result = solution(l);
+        int[] result = solution(l);
         System.out.println(result);
     }
 }
